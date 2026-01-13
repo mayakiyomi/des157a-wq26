@@ -1,3 +1,8 @@
+#container{
+    margin: 0 auto;
+    min-width:300px;
+}
+
 body{
     background-color:#D5E8FE;
     margin:0;
@@ -7,9 +12,10 @@ body{
     font-style: normal;
     color:#0B0C30;
     font-size:1.05em;
-    min-width:300px;
+    
 }
-header{
+
+#banner{
     background-color: #041071;
     height:250px;
     display:flex;
@@ -56,7 +62,7 @@ h2{
     margin-top:20px;
     margin-bottom:2px;
 }
-.tagline{
+#tagline{
     display:flex;
     flex-direction:column;
     align-items: center;
@@ -71,7 +77,7 @@ h2{
     align-items: center;
     gap:40px;
 }
-.projectbox{
+.projectBox{
     background-color:#FDFEFF;
     text-align:left;
     height:261px;
@@ -122,10 +128,12 @@ footer a:hover{
     }
 }
 @media only screen and (min-width: 600px) {
-    body{
-        min-width:800px;
+    #container{
+        max-width: 1200px;
+        min-width: 800px;
     }
-    header{
+    
+    #banner{
         flex-direction:row;
         gap:50px;
         padding: 0 40px;
@@ -133,11 +141,11 @@ footer a:hover{
         justify-content:center;
     }
     h1{
-        font-size: 13vw;
+        font-size: clamp(5em, 13vw, 9em);
         text-align: right;
     
     }
-    .tagline{
+    #tagline{
         margin-top:30px;
         flex-direction:row;
         justify-content: center;
