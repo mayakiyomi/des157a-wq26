@@ -11,40 +11,41 @@
 </body>
 <!-- This program asks users to input their favorite color from a provided list, and then turns the background to that color, as suggested on the assignment page.  -->
 <script>
+    colors = ['Red','red','orange', 'Orange','Yellow','yellow','green','Green','blue','Blue','purple','Purple','pink','Pink','black','Black'];
     var color = prompt("what is your favorite color from this list?: Red, Orange, Yellow, Green, Blue, Purple, Pink, Black", "color");
         
-    document.querySelector('h1').innerHTML= `${color} is your favorite color!`;
+    function validColor(colors, color){
+        if (colors.includes(color)){
+            document.querySelector('h1').innerHTML= `${color} is your favorite color!`;
+        } else{
+            document.querySelector('h1').innerHTML= `You didn't write a color on the list!`;
+            document.querySelector('h2').innerHTML= `Refresh to try again`;
+        }
+    }
+
    
-    function textcolor(){
+    function textColor(color){
         if (color==='black' || color==='red'|| color==='green'|| color==='blue'||color==='purple'){
             var pageTextColor= 'white';
         } else{
             var pageTextColor = 'black';
         } 
-        return (pageTextColor);   
+        return pageTextColor;   
     }
 
-    function changeColor(){
+    function changeColor(color, pageTextColor){
         if (color=="red" || color=="Red"){
             document.querySelector('body').style.backgroundColor = "red";
-            document.querySelector('h1').style.color = "white";
-            document.querySelector('h2').style.color = "white";
         }else if (color=="orange"||color=="Orange"){
             document.querySelector('body').style.backgroundColor = "orange";
         }else if (color=="yellow"||color=="Yellow"){
             document.querySelector('body').style.backgroundColor = "yellow";
         }else if (color=="green"||color=="Green"){
             document.querySelector('body').style.backgroundColor = "green";
-            document.querySelector('h1').style.color = "white";
-            document.querySelector('h2').style.color = "white";
         }else if (color=="blue"||color=="Blue"){
             document.querySelector('body').style.backgroundColor = "blue";
-            document.querySelector('h1').style.color = "white";
-            document.querySelector('h2').style.color = "white";
         }else if (color=="purple"||color=="Purple"){
             document.querySelector('body').style.backgroundColor = "purple";
-            document.querySelector('h1').style.color = "white";
-            document.querySelector('h2').style.color = "white";
         }else if (color=="pink"||color=="Pink"){
             document.querySelector('body').style.backgroundColor = "pink";
         }else if (color=="black"||color=="Black"){
@@ -53,7 +54,10 @@
         document.querySelector('h1').style.color = pageTextColor;
         document.querySelector('h2').style.color = pageTextColor;
     }
-    changeColor();
+    validColor(colors, color);
+    textColor(color);
+    var pageTextColor = textColor(color);
+    changeColor(color, pageTextColor);
 
 </script>
 </html>
