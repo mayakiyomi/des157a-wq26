@@ -1,0 +1,405 @@
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 2em;
+    font-style: normal;
+    margin: 0;
+
+}
+main{
+    margin: 0 auto;   
+    padding: 2rem 1rem;
+    max-width: 900px;
+    width: 80%;
+}
+
+/* submit section (bottom layer) */
+#madLibSubmit{
+    /* display: none; */
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 50px;
+    margin: 2rem 1rem;
+}
+
+#graphic{
+    display:block;
+    max-width: 316px;  
+    width:100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+h1{
+    color: #F820C9;
+    font-family:"Nanum Gothic Coding", monospace;
+    font-size: clamp(2.5rem, 6vw, 57px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+p{
+    text-align: justify;
+}
+
+#submitWork{
+    max-width: 520px;
+    width: 100%;
+}
+/* form styling */
+form{
+    display:flex;
+    flex:1;
+    flex-direction: column;   
+    
+}
+#formQs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  background-color: rgba(248, 32, 201, 0.47);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 50px;
+
+    
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+  }
+/* looked up how to remove the first two rows from the grid and this is what they gave me */
+#formQs .inputGroup:nth-child(1),
+#formQs .inputGroup:nth-child(2) {
+
+  grid-column: 1 / -1;
+}
+  
+.inputGroup label {
+    margin-bottom: 0.25rem;
+}
+#send-form{
+    background-color: #3603D0;
+    width: 225px;
+    height: 60px;
+    margin: auto;
+    border-radius: 15px;
+    border:none;
+    color: white;
+    font-family:"Nanum Gothic Coding", monospace;
+    font-size: 2em;
+}
+#formQs input{
+    height: 30px;
+    border-radius:5px;
+    border: none;
+    font-size: 1em;
+    padding-left: 9px;
+    margin-bottom: -10px;
+}
+
+input::placeholder{
+    font-size: .87em;
+} 
+
+/* output page */
+#madLibOutput{
+    display:none;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+#plaque{
+    background-color: rgba(248, 32, 201, 0.73);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 620px;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+h2{
+    color: white;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-size: clamp(2.5rem, 6vw, 57px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: -1rem;
+}
+#plaque p{
+    color: white;
+}
+#plaque #year {
+    color: black;
+    font-style: italic;
+    font-size: clamp(1.2em, 1vw, 16px);
+}
+
+#restart {
+    max-width: 300px;
+    text-align: center;
+  }
+#restart p{
+    font-family:"Nanum Gothic Coding", monospace;
+    color:#F820C9;
+    font-size: clamp(1.5rem, 3vw,40px);
+    line-height: 1.2em;
+}
+#submitAgain{
+    display:block;
+    background-color: #3603D0;
+    width: 225px;
+    padding: 10px 30px 10px 30px;
+    margin: auto;
+    border-radius: 15px;
+    border:none;
+    color: white;
+    font-family:"Nanum Gothic Coding", monospace;
+    font-size: 1.5em;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 2em;
+    font-style: normal;
+    margin: 0;
+
+}
+main{
+    margin: 0 auto;   
+    padding: 2rem 1rem;
+    max-width: 900px;
+    width: 80%;
+}
+
+/* submit section (bottom layer) */
+#madLibSubmit{
+    /* display: none; */
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    gap: 50px;
+    margin: 2rem 1rem;
+}
+
+#graphic{
+    display:block;
+    max-width: 316px;  
+    width:100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+h1{
+    color: #F820C9;
+    font-family:"Nanum Gothic Coding", monospace;
+    font-size: clamp(2.5rem, 6vw, 57px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+p{
+    text-align: justify;
+}
+
+#submitWork{
+    max-width: 520px;
+    width: 100%;
+}
+/* form styling */
+form{
+    display:flex;
+    flex:1;
+    flex-direction: column;   
+    
+}
+#formQs{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  background-color: rgba(248, 32, 201, 0.47);
+  border-radius: 20px;
+  padding: 30px;
+  margin-bottom: 50px;
+
+    
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+  }
+/* looked up how to remove the first two rows from the grid and this is what they gave me */
+#formQs .inputGroup:nth-child(1),
+#formQs .inputGroup:nth-child(2) {
+
+  grid-column: 1 / -1;
+}
+  
+.inputGroup label {
+    margin-bottom: 0.25rem;
+}
+#send-form{
+    background-color: #3603D0;
+    width: 225px;
+    height: 60px;
+    margin: auto;
+    border-radius: 15px;
+    border:none;
+    color: white;
+    font-family:"Nanum Gothic Coding", monospace;
+    font-size: 2em;
+}
+#formQs input{
+    height: 30px;
+    border-radius:5px;
+    border: none;
+    font-size: 1em;
+    padding-left: 9px;
+    margin-bottom: -10px;
+}
+
+input::placeholder{
+    font-size: .87em;
+} 
+
+/* output page */
+#madLibOutput{
+    display:none;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+#plaque{
+    background-color: rgba(248, 32, 201, 0.73);
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 620px;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+h2{
+    color: white;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-size: clamp(2.5rem, 6vw, 57px);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-align: left;
+}
+
+h3{
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: -1rem;
+}
+#plaque p{
+    color: white;
+}
+#plaque #year {
+    color: black;
+    font-style: italic;
+    font-size: clamp(1.2em, 1vw, 16px);
+}
+
+#restart {
+    max-width: 300px;
+    text-align: center;
+  }
+#restart p{
+    font-family:"Nanum Gothic Coding", monospace;
+    color:#F820C9;
+    font-size: clamp(1.5rem, 3vw,40px);
+    line-height: 1.2em;
+}
+#submitAgain{
+    display:block;
+    background-color: #3603D0;
+    width: 225px;
+    padding: 10px 30px 10px 30px;
+    margin: auto;
+    border-radius: 15px;
+    border:none;
+    color: white;
+    font-family:"Nanum Gothic Coding", monospace;
+    font-size: 1.5em;
+}
+@media only screen and (max-width: 599px) { 
+    #formQs { 
+        grid-template-columns: 1fr; 
+    } 
+}
+
+@media only screen and (min-width: 600px) {
+    main{
+        max-width: 1000px;
+        width: 100%;
+    }
+
+    #madLibSubmit {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 9%;
+    }
+
+    #submitWork {
+        flex: 1.2;  
+        max-width: none;
+        min-width: 0;   
+    }
+
+    form {
+        flex: 1;   
+        max-width: none;
+        min-width: 0;  
+    }
+    #formQs {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    }
+    #graphic{
+        max-width: 484px;  
+    }
+
+    #madLibOutput {
+        flex-direction: row;
+        width: 95vw; 
+        margin-left: calc(-50vw + 50%);
+        padding: 2rem 1rem;
+        box-sizing: border-box;
+        gap: 5%;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #plaque{
+        max-width:750px; 
+        width: 100%;
+        padding: 50px;
+        flex: 2;
+        box-sizing: border-box;
+    }
+
+    #restart{
+        flex: 1;
+        align-items: center;
+    }
+}

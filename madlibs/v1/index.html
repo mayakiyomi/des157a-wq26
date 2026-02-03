@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadLibs</title>
+    <!-- normalize css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- link fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nanum+Gothic+Coding:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id = "madLibSubmit">
+            <article id="submitWork">
+                <img id ='graphic' src = 'images/graphic.png' alt = 'graphic frames' width = '484' height ='291'>
+                <h1>Submit a Work for Exhibition</h1>
+                <p>Our curatorial team is looking for pieces for an upcoming exhibit. Please submit the complete title of your work, along with a series of single-word descriptors that best represent it. These will be used to generate the accompanying plaque.</p>
+            </article>
+            <form id ='madlibsForm'>
+                <section id ='formQs'>
+                    <div class = 'inputGroup'>
+                        <label for="name">Artist Name</label>
+                        <input type = "text" name = "name" id="name" placeholder ="Me!" required>
+                    </div>    
+
+                    <div class = 'inputGroup'>
+                        <label for ="title">Title of Work</label>
+                        <input type = "text" name = "title" id="title" placeholder ="Title of Work" required>
+                    </div>
+
+                    <div class = 'inputGroup'>
+                        <label for ="adjective">Adjective</label>
+                        <input type = "text" name = "adjective" id="adjective" placeholder ="Be descriptive" required>
+                    </div>
+                    <div class = 'inputGroup'>
+                        <label for ="color">Color</label>
+                        <input type = "text" name = "color" id="color" placeholder ="Be vivid" required>
+                    </div>
+
+                    <div class = 'inputGroup'>
+                        <label for ="material">Material</label>
+                        <input type = "text" name = "material" id="material" placeholder ="What's it made of?" required>
+                    </div>
+                    <div class = 'inputGroup'>
+                        <label for ="verb">Present Tense Verb</label>
+                        <input type = "text" name = "verb" id="verb" placeholder ="What does it do?" required>
+                    </div>
+                    
+                    <div class = 'inputGroup'>
+                        <label for ="emotion1">Emotion</label>
+                        <input type = "text" name = "emotion1" id="emotion1" placeholder ="It makes you feel..." required>
+                    </div>
+
+                    <div class = 'inputGroup'>
+                        <label for ="emotion2">Emotion</label>
+                        <input type = "text" name = "emotion2" id="emotion2" placeholder ="Art is complex..." required>
+                    </div>
+
+                    <div class = 'inputGroup'>
+                    <label for ="noun">Noun</label>
+                        <input type = "text" name = "noun" id="noun" placeholder ="Get weird!" required>
+                    </div>
+                </section>
+                <input type="submit" name="submit" id="send-form" value="SUBMIT">
+            </form>
+        </section>
+        <section id ="madLibOutput">
+            <article id ="plaque">
+                <h2>Title</h2>
+                <h3>Artist Name</h3>
+                <p id = "year">2025</p>
+                <p>
+                    This [adjective] work features extensive use of [color] and [material], arranged in a manner that [verb ending in -s] traditional expectations of form.
+                </p>
+                <p>
+                    The piece evokes feelings of [emotion] while engaging critically with themes of [emotion].
+                </p>
+                <p>
+                    Often categorized within the [noun] movement, the work resists singular interpretation.
+                </p>
+            </article>
+            <section id = "restart">
+                <p>Sounds like an interesting piece of art!</p>
+                <button id = "submitAgain">Submit another?</button>
+            </section>
+        </section>
+    </main>
+    
+</body>
+</html>
