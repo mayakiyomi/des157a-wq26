@@ -359,6 +359,8 @@ h3{
     background-color:rgba(248, 32, 201);
     transition: .2s ease-in-out;        
 }
+
+/* make grid vertical for mobile */
 @media only screen and (max-width: 599px) { 
     #formQs { 
         grid-template-columns: 1fr; 
