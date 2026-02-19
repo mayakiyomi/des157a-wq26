@@ -1,0 +1,108 @@
+
+body {
+	font-family:"Helvetica Neue", sans-serif;
+	color: #333;
+}
+
+main {
+	width: 25vw;
+	padding: 20px;
+}
+
+section {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+
+figure {
+	display: block;
+	margin: 0;
+	width: 70vw;
+	height: 100vh;
+	position: fixed;
+	top:0;
+	right:0;
+	overflow: hidden;
+}
+
+figure img {
+	position: absolute;
+	transition: all 3s ease;
+}
+
+.sect1{
+	width: 130vh; /*adjusted to fit vertical images*/
+	top:0;
+	left: 50%;
+	transform:translateX(-50%);
+}
+
+.sect2,
+.sect3,
+.sect4,
+.sect5,
+.sect6{
+    width: 3768px;
+}
+
+.sect2 {
+    top: calc(-1867px + 100vh);
+    left: calc(-2207px + 100vh);
+}
+
+.sect3 {
+    top: calc(-1167px + 100vh);
+    left: calc(-3068px + 70vw);
+}
+
+.sect4 {
+	top: calc(-3267px + 100vh);
+    left: calc(-3128px + 70vw);
+}
+.sect5 {
+	top: calc(-1450px + 100vh);
+    left: calc(-2328px + 70vw);
+}
+.sect6 {
+	top: calc(-1265px + 100vh);
+    left: calc(-4115px + 70vw);
+}
+/* preloader */
+#preloader{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgb(25, 23, 23);
+	color: #fff;
+	font-size: 3em;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+.fadeout {
+	animation-name: fadeout;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeout {
+	0%{
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
