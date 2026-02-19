@@ -75,7 +75,7 @@ figure img {
     left: calc(-4115px + 70vw);
 }
 /* preloader */
-#preloader{
+#preloader.visible{
 	width: 100%;
 	height: 100vh;
 	position: fixed;
@@ -90,6 +90,9 @@ figure img {
 	justify-content: space-around;
 }
 
+#preloader.hidden{
+	display:none;
+}
 
 .fadeout {
 	animation-name: fadeout;
