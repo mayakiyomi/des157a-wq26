@@ -1,13 +1,16 @@
 
 body {
-	font-family:"Helvetica Neue", sans-serif;
-	color: #ffffff;
+	font-family: "DM Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	color: #fff9f0;
 }
 
 main {
 	width: 25vw;
 	padding: 20px;
-	background-color:rgb(255, 0, 51);
+	background-color: #ff1c14;
 }
 
 section {
@@ -15,9 +18,11 @@ section {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	
 }
-
+h1{
+	font-weight:700;
+	font-size:3em;
+}
 p {
 	line-height: 1.5em;
 }
@@ -26,7 +31,7 @@ p {
 figure {
 	display: block;
 	margin: 0;
-	width: 71.5vw;
+	width: 71.2vw;
 	height: 100vh;
 	position: fixed;
 	top:0;
@@ -40,7 +45,7 @@ figure img {
 }
 
 .sect1{
-	width: 130vh; 
+	width: 130vh; /*adjusted to fit vertical images*/
 	top:0;
 	left: 50%;
 	transform:translateX(-50%);
@@ -69,15 +74,15 @@ figure img {
     left: calc(-3128px + 70vw);
 }
 .sect5 {
-	top: calc(-1450px + 100vh);
-    left: calc(-2328px + 70vw);
+	top: calc(-2550px + 100vh);
+    left: calc(-3085px + 70vw);
 }
 .sect6 {
-	top: calc(-1265px + 100vh);
-    left: calc(-4115px + 70vw);
+	top: calc(-3885px + 100vh);
+    left: calc(-3085px + 70vw);
 }
 /* preloader */
-#preloader.visible{
+#preloader {
 	width: 100%;
 	height: 100vh;
 	position: fixed;
@@ -92,9 +97,6 @@ figure img {
 	justify-content: space-around;
 }
 
-#preloader.hidden{
-	display:none;
-}
 
 .fadeout {
 	animation-name: fadeout;
