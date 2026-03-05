@@ -67,7 +67,7 @@
 
 			postTops.forEach(function (post) { if (pagePosition > post) { counter++; } });
 		}
-
+/* IMPROVEMENTS: had to look up how to get the main to go back to the top bc could not figure it out w pageTop, used scrollTo instead. */
 		btn.addEventListener('click', function(){
 			window.scrollTo({
 				top : 0,
