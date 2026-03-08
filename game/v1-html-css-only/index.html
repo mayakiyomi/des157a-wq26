@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game On V1</title>
+    <!-- normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- overlay -->
+    <div id="overlay">
+        <div id="overlayContent" >
+          <h2>HOW TO PLAY COLOR MEMORY</h2>
+          <p>A color will flash briefly in the square. Try to memorize it!</p>
+          <p>Then use the color picker to select the color from memory.</p>
+          <h3>Scoring</h3>
+          <ul>
+            <li>Exact match → +2 points</li>
+            <li>Close match → +1 point</li>
+            <li>Far off → 0 points</li>
+          </ul>
+          <p>First player to 10 points wins!</p>
+          <button id="closeOverlay">START PLAYING</button>
+        </div>
+      </div>
+    
+    <!-- game screen -->
+    <header>
+        <h1>COLOR MEMORY</h1>
+        <button id="howToBtn">HOW TO PLAY</button>
+        <div class="scores">
+            <div id="player1Display">Player 1: <span id="score1">0</span></div>
+            <div id="player2Display">Player 2: <span id="score2">0</span></div>
+        </div>
+        <div id="currentPlayer">Current Turn: Player 1</div>
+  </header>   
+  <main>
+    <div class="color-box" id="colorBox"></div>
+
+    <div id="pickerContainer" >
+      <input type="color" id="colorPicker" value="#808080">
+      <button id="submitBtn">SUBMIT GUESS</button>
+    </div>
+
+    <!-- answer / comparison -->
+        <div id="answerScreen">
+            <div id="answerBoxes">
+                <div>
+                    <p>Your Guess</p>
+                    <div class="color-box small" id="playerGuess"></div>
+                </div>
+                <div>
+                    <p>Original Color</p>
+                    <div class="color-box small" id="originalColor"></div>
+                </div>
+            </div>
+        </div>
+        <div id="feedback"></div>
+    </main>
+</body>
+</html>

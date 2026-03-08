@@ -1,0 +1,141 @@
+body{
+    font-family: "DM Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    /* text-align:center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main{
+    background-color: #FFFEFB;
+    margin: auto;
+    width: 600px;
+    /* text-align:center; */
+}
+
+/* overlay */
+#overlay{
+    position: absolute;
+    display:flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transition-property: opacity, visibility;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+#overlayContent{
+    box-sizing: border-box;
+    background-color:#FFFEFB;
+    padding: 20px;
+    width: 50vw;
+    height: 80vh;
+    position: absolute;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#overlayContent li{
+    list-style-type: none;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+#overlayContent ul{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#overlay button{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #FFFEFB;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+#overlay button:hover{
+    background-color: black;
+    color: #FFFEFB;
+}
+#overlay.hidden{
+    display: none;
+}
+
+/* game display */
+h1{
+    font-size: 4em;
+    text-align: center;
+}
+
+h2{
+    font-size: 3em;
+}
+#howToBtn{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #FFFEFB;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+#howToBtn:hover{
+    background-color: black;
+    color: #FFFEFB;
+}
+
+header{
+    margin: auto;
+    width: 600px;
+    text-align: center;
+    padding: 50px;
+}
+/* picker screen */
+#pickerContainer.hidden{
+    display:none;
+}
+#pickerContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#colorPicker{
+    width: 100px;
+    height: 100px;
+}
+
+#submitBtn{
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #FFFEFB;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+    width: 200px;
+}
+
+#submitBtn:hover{
+    background-color: black;
+    color: #FFFEFB;
+    transition: 0.5s ease-in-out;
+}
+/* answer screen */
+#answerBoxes{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#answerScreen.hidden{
+    display:none;
+}
