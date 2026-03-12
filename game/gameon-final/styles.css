@@ -6,9 +6,14 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
+    min-height: 100vh;
 }
 
 main{
+    flex: 1;
+    display:flex;
+    flex-direction:column;
     background-color: #FFFEFB;
     margin: auto;
     width: 600px;
@@ -104,13 +109,13 @@ header{
 }
 
 #colorPicker{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     margin: 40px auto;
 }
 #colorBox{
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border: 2px solid black;
     margin: 40px auto;
 }
@@ -195,4 +200,9 @@ header{
     background-color: black;
     color: #FFFEFB;
     transition: 0.5s ease-in-out;
+}
+
+footer{
+   margin-bottom: 50px;
+   text-align: center;
 }

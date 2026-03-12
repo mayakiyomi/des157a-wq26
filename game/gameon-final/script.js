@@ -16,6 +16,11 @@
     const winScreen = document.querySelector('#winScreen');
     const winText = document.querySelector('#winText');
     const playAgain = document.querySelector('#playAgain');
+    
+    /* audio */
+    const right1= document.querySelector('#right1');
+    const rightWin= document.querySelector('#rightWin');
+    const wrong= document.querySelector('#wrong');
 
     /* lets */
     let targetColor;
@@ -58,14 +63,17 @@
         if(difference < 36){
             points = 2;
             feedback.innerHTML = "Nice! +2 points";
+            rightWin.play();
         }
         else if(difference < 120){
             points = 1;
             feedback.innerHTML = "Close! +1 point";
+            right1.play();
         }
         else{
             points = 0;
             feedback.innerHTML = "Not close enough!";
+            wrong.play();
         };
 
         /* update scores */
@@ -84,12 +92,14 @@
             winScreen.className = ''; // show win screen
             pickerContainer.className = 'hidden';
             answerScreen.className = 'hidden';
+            rightWin.play();
             return; // stop the function here
         } else if(player2Score >= 5){
             winText.innerHTML = "PLAYER 2 WINS!";
             winScreen.className = ''; // show win screen
             pickerContainer.className = 'hidden';
             answerScreen.className = 'hidden';
+            rightWin.play();
             return;
         }
 
